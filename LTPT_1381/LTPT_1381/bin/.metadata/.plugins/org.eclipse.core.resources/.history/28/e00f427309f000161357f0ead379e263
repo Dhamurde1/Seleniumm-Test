@@ -1,0 +1,24 @@
+package webdriveradvanced;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class ExMouseHandling1 {
+	public static void main(String args[]) throws InterruptedException
+	{
+	FirefoxDriver driver=new FirefoxDriver();
+	driver.get("http://127.0.0.1/orangehrm-3.0.1/symfony/web/index.php/auth/login");
+	driver.findElement(By.id("txtUsername")).sendKeys("Vishnu");
+	driver.findElement(By.id("txtPassword")).sendKeys("Vishnu");
+	driver.findElement(By.id("btnLogin")).click();
+	driver.findElement(By.xpath(".//*[@id='menu_admin_viewAdminModule']")).click();
+	Actions actions=new Actions(driver);
+	
+	actions.moveToElement(driver.findElement(By.xpath(".//*[@id='menu_admin_Job']"))).moveToElement(driver.findElement(By.xpath(".//*[@id='menu_admin_viewJobTitleList']"))).click().build().perform();
+	
+	
+	
+	}
+}

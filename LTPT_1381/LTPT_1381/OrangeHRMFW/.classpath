@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Happiness/Testing/Automation/Automation/2. JAR Files/Selenium Jar/selenium-server-standalone-3.13.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

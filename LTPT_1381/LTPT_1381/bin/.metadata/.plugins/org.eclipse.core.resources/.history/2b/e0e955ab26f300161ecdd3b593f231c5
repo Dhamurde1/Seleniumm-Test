@@ -1,0 +1,40 @@
+package com.orangehrm.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage extends BasePage {
+	@FindBy(xpath=".//*[@id='txtUsername']")
+	private WebElement txtboxUserName;
+	
+	@FindBy(xpath=".//*[@id='txtPassword']")
+	private WebElement txtboxPassword;
+	
+	@FindBy(xpath=".//*[@id='btnLogin']")
+	private WebElement buttonLogin;
+	
+	@FindBy(xpath=".//*[@id='spanCopyright']")
+	private WebElement footerText;
+	
+	
+	
+	public LoginPage(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	public void Login(String Uname,String Pwd)
+	{
+		txtboxUserName.sendKeys(Uname);
+		txtboxPassword.sendKeys(Pwd);
+		buttonLogin.click();
+	}
+	
+	public String getFooterText()
+	{
+		return footerText.getText();
+	}
+	
+}

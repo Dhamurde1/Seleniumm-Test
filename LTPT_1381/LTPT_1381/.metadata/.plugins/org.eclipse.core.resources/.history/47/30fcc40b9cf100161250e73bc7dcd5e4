@@ -1,0 +1,31 @@
+package webdriveradvanced;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ExHandlingFrames {
+	public static void main(String args[]) {
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("http://127.0.0.1/orangehrm-2.6/login.php");
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.findElement(By.name("txtUserName")).sendKeys("Vishnu");
+		driver.findElement(By.name("txtPassword")).sendKeys("Vishnu");
+		driver.findElement(By.name("Submit")).submit();
+		
+		driver.findElement(By.xpath(".//*[@id='pim']/a")).click();
+		
+		driver.findElement(By.xpath(".//*[@id='pim']/ul/li[2]/a/span")).click();
+		driver.switchTo().frame(0);
+		
+		driver.findElement(By.xpath(".//*[@id='txtEmpLastName']")).sendKeys("Shirisha");
+		
+		//driver.switchTo().defaultContent();
+		
+		driver.findElement(By.xpath(".//*[@id='pim']/a")).click();
+		driver.findElement(By.xpath(".//*[@id='pim']/ul/li[1]/a/span")).click();
+		
+		
+	}
+}

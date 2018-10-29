@@ -1,0 +1,28 @@
+package com.orangehrm.tests;
+
+import java.util.concurrent.TimeUnit;
+
+import org.testng.annotations.Test;
+
+import com.orangehrm.pages.JobTitlePage;
+import com.orangehrm.pages.Loginpage;
+
+public class AddJob_TitleTest extends BaseTest {
+	@Test
+
+	public void addjobtitle() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Loginpage login = new Loginpage(driver);
+		login.login();
+          
+		JobTitlePage addjobtitle = new JobTitlePage(driver);
+		
+		//addjobtitle.verifyAddjobtitle();
+		//Assert.assertEquals(addjobtitle.verifyAddjobtitle(), "Add Job Title");
+		//String addjobtitle.verifyRecordinwt(JobTitle);
+		addjobtitle.AddJob_Title();
+		
+
+	}
+
+}

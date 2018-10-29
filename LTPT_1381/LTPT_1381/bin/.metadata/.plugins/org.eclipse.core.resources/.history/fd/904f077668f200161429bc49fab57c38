@@ -1,0 +1,21 @@
+package com.orangeHRM.tests;
+
+import org.testng.annotations.Test;
+
+
+import com.orangeHRM.pages.LoginPage;
+import com.orangeHRM.pages.PayGradesPage;
+import com.orangeHRM.utilities.ReadDataFromExcel;
+
+public class PayGradesTest extends BaseTest {
+	@Test
+	public void verifyPayGradesTest()
+	{
+		LoginPage loginpage=new LoginPage(getdriver());
+		loginpage.Login(ReadDataFromExcel.readData(1,0),ReadDataFromExcel.readData(1,1));
+		PayGradesPage payGrade=new PayGradesPage(getdriver());
+		payGrade.payGrades(ReadDataFromExcel.readData(1,7));
+		
+	}
+
+}

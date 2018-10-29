@@ -1,0 +1,24 @@
+package com.orangehrm.tests;
+
+
+import org.testng.annotations.Test;
+
+import com.orangeHRM.pages.EmploymentStatusPage;
+import com.orangeHRM.pages.LoginPage;
+
+import com.orangeHRM.utilities.ReadDataFromExcel;
+
+public class EmploymentStatusTest {
+	@Test
+	public void verifyEmploymentStatusTest()
+	{
+		LoginPage loginpage=new LoginPage(getdriver());
+		loginpage.Login(ReadDataFromExcel.readData(1,0),ReadDataFromExcel.readData(1,1));
+		EmploymentStatusPage empStatus=new EmploymentStatusPage(getdriver());
+		empStatus.employmentStatus(ReadDataFromExcel.readData(1,8));
+		
+	}
+
+	
+	
+}

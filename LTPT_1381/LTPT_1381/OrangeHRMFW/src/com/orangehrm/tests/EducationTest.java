@@ -1,0 +1,24 @@
+package com.orangehrm.tests;
+
+import org.testng.annotations.Test;
+
+import com.orangehrm.pages.EducationPage;
+
+import com.orangehrm.pages.LoginPage;
+import com.orangehrm.utility.ReadDataFromExcel;
+
+
+public class EducationTest extends BaseTest{
+	@Test
+	public void verifyEducationTest()
+	{
+		LoginPage loginpage=new LoginPage(getDriver());	
+		loginpage.Login(ReadDataFromExcel.readData(1,0),ReadDataFromExcel.readData(1,1));
+		EducationPage level=new EducationPage(getDriver());
+		level.Education("MCA");
+		
+	}
+
+	
+
+}

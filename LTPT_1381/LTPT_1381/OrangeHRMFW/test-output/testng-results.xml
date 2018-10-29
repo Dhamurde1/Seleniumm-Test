@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="OrangeHRM" duration-ms="49923" started-at="2017-02-15T02:44:30Z" finished-at="2017-02-15T02:45:20Z">
+    <groups>
+    </groups>
+    <test name="AddEmployee" duration-ms="49923" started-at="2017-02-15T02:44:30Z" finished-at="2017-02-15T02:45:20Z">
+      <class name="com.orangehrm.tests.AddEmployeeTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@28d25987]" name="openBrowser" is-config="true" duration-ms="10776" started-at="2017-02-15T08:14:30Z" finished-at="2017-02-15T08:14:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyAddEmployeeTest()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@28d25987]" name="verifyAddEmployeeTest" duration-ms="26672" started-at="2017-02-15T08:14:41Z" finished-at="2017-02-15T08:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddEmployeeTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@28d25987]" name="closeBrowser" is-config="true" duration-ms="3648" started-at="2017-02-15T08:15:07Z" finished-at="2017-02-15T08:15:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.orangehrm.tests.AddEmployeeTest -->
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.orangehrm.tests.LoginTest@4501b7af]" name="openBrowser" is-config="true" duration-ms="8583" started-at="2017-02-15T08:15:11Z" finished-at="2017-02-15T08:15:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyFooterText()[pri:0, instance:com.orangehrm.tests.LoginTest@4501b7af]" name="verifyFooterText" duration-ms="173" started-at="2017-02-15T08:15:20Z" finished-at="2017-02-15T08:15:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.LoginTest@4501b7af]" name="closeBrowser" is-config="true" duration-ms="24" started-at="2017-02-15T08:15:20Z" finished-at="2017-02-15T08:15:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.orangehrm.tests.LoginTest -->
+    </test> <!-- AddEmployee -->
+  </suite> <!-- OrangeHRM -->
+</testng-results>

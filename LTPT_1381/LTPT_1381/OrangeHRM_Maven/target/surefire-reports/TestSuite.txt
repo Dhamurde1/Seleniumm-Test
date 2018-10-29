@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.542 sec <<< FAILURE!
+verifyFooterText(com.orangehrm.tests.LoginTest)  Time elapsed: 0.196 sec  <<< FAILURE!
+java.lang.AssertionError: expected [OrangeHRM ver 3.0.1 ? OrangeHRM Inc. 2005 - 2017 All rights reserved.] but found [OrangeHRM ver 3.0.1 © OrangeHRM Inc. 2005 - 2017 All rights reserved.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.orangehrm.tests.LoginTest.verifyFooterText(LoginTest.java:15)
+

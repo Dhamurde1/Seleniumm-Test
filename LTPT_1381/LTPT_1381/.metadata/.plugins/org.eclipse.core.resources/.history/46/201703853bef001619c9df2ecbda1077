@@ -1,0 +1,29 @@
+package com.orangehrm.utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class ReadPropertyFile {
+
+	Properties prop;
+	FileInputStream fis;
+	File file;
+	public void setPropertyFile() throws IOException
+	{
+		file=new File("..\\OrangeHRM\\resources\\OrangeHRM.properties");
+		fis=new FileInputStream(file);
+		prop=new Properties();
+		prop.load(fis);
+	}
+	
+	
+	
+	public String getPropertyValue(String propertyname)
+	{
+		
+		return prop.getProperty(propertyname);	
+		
+	}
+}

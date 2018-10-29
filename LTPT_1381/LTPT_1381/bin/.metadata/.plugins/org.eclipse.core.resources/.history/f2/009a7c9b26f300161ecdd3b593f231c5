@@ -1,0 +1,24 @@
+package com.orangehrm.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.orangeHRM.pages.EmploymentStatusPage;
+import com.orangeHRM.pages.LoginPage;
+import com.orangeHRM.pages.SkillPage;
+import com.orangeHRM.utilities.ReadDataFromExcel;
+
+public class SkillTest {
+	@Test
+	public void verifySkillTest ()
+	{
+		LoginPage loginpage=new LoginPage(getdriver());
+		loginpage.Login(ReadDataFromExcel.readData(1,0),ReadDataFromExcel.readData(1,1));
+		SkillPage empStatus=new SkillPage(getdriver());
+		empStatus.Skill(ReadDataFromExcel.readData(1,8));
+		
+	}
+
+	
+
+}

@@ -1,0 +1,25 @@
+package com.orangehrm.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.orangehrm.pages.AddEmployeePage;
+import com.orangehrm.pages.EmployeeListPage;
+import com.orangehrm.pages.LoginPage;
+import com.orangehrm.utility.ReadDataFromExcel;
+
+public class AddEmployeeTest extends BaseTest {
+
+	@Test
+	public void verifyAddEmployeeTest()
+	{
+		  LoginPage loginpage=new LoginPage(getDriver());	
+		  loginpage.Login(ReadDataFromExcel.readData(1,0),ReadDataFromExcel.readData(1,1));
+		  AddEmployeePage addemployee=new AddEmployeePage(getDriver());
+		  addemployee.navigateToPIM();
+		  String Expectedvalue=addemployee.addEmployee(ReadDataFromExcel.readData(1,2),ReadDataFromExcel.readData(1,3));	  
+		  EmployeeListPage employeelist=new EmployeeListPage(getDriver());
+		  employeelist.navigateToEmployeelist();
+		  Assert.assertEquals(employeelist.verifyRecordinWT(Expectedvalue), true);
+	}
+}

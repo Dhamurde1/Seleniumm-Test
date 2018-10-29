@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="OrangeHRM" verbose="1" >
+<test name="HomePage">
+    <classes>
+      <class name="com.orangehrm.tests.AddEmployeeTest">
+        <methods>
+          <include name="verifyAddEmployee" />          
+        </methods>
+      </class>
+      <class name="com.orangehrm.tests.EmployeeListTest">
+        <methods>
+          <include name="verifyDeleteButtonStatusAsDisabledwhenNoCheckboxIsSelected" />          
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite>

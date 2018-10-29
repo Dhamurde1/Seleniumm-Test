@@ -1,0 +1,16 @@
+package oops;
+
+public class ExExceptionHandling {
+	public static void main(String args[]) {
+	
+    System.out.println("Open Browser");
+	int a;
+	a=30;
+	int b;
+	b=3;
+	int c;
+	c=a/b;
+	System.out.println(c);
+	System.out.println("Close Browser");	
+	}
+}

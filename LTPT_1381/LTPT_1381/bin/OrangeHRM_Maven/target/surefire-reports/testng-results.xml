@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="OrangeHRM" duration-ms="47807" started-at="2017-02-15T03:40:53Z" finished-at="2017-02-15T03:41:41Z">
+    <groups>
+    </groups>
+    <test name="AddEmployee" duration-ms="47807" started-at="2017-02-15T03:40:53Z" finished-at="2017-02-15T03:41:41Z">
+      <class name="com.orangehrm.tests.AddEmployeeTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@35fb3008]" name="openBrowser" is-config="true" duration-ms="9774" started-at="2017-02-15T09:10:53Z" finished-at="2017-02-15T09:11:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyAddEmployeeTest()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@35fb3008]" name="verifyAddEmployeeTest" duration-ms="26667" started-at="2017-02-15T09:11:03Z" finished-at="2017-02-15T09:11:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddEmployeeTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.AddEmployeeTest@35fb3008]" name="closeBrowser" is-config="true" duration-ms="3216" started-at="2017-02-15T09:11:30Z" finished-at="2017-02-15T09:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.orangehrm.tests.AddEmployeeTest -->
+      <class name="com.orangehrm.tests.LoginTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.orangehrm.tests.LoginTest@7225790e]" name="openBrowser" is-config="true" duration-ms="7939" started-at="2017-02-15T09:11:33Z" finished-at="2017-02-15T09:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="verifyFooterText()[pri:0, instance:com.orangehrm.tests.LoginTest@7225790e]" name="verifyFooterText" duration-ms="172" started-at="2017-02-15T09:11:41Z" finished-at="2017-02-15T09:11:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [OrangeHRM ver 3.0.1 � OrangeHRM Inc. 2005 - 2017 All rights reserved.] but found [OrangeHRM ver 3.0.1 © OrangeHRM Inc. 2005 - 2017 All rights reserved.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [OrangeHRM ver 3.0.1 � OrangeHRM Inc. 2005 - 2017 All rights reserved.] but found [OrangeHRM ver 3.0.1 © OrangeHRM Inc. 2005 - 2017 All rights reserved.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.orangehrm.tests.LoginTest.verifyFooterText(LoginTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterText -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.orangehrm.tests.LoginTest@7225790e]" name="closeBrowser" is-config="true" duration-ms="19" started-at="2017-02-15T09:11:41Z" finished-at="2017-02-15T09:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.orangehrm.tests.LoginTest -->
+    </test> <!-- AddEmployee -->
+  </suite> <!-- OrangeHRM -->
+</testng-results>

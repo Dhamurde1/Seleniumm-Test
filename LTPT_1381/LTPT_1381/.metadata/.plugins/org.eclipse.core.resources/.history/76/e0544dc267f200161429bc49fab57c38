@@ -1,0 +1,24 @@
+package com.orangehrm.tests;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import com.orangeHRM.pages.EducationPage;
+
+import com.orangeHRM.pages.LoginPage;
+import com.orangeHRM.utilities.ReadDataFromExcel;
+
+public class EducationTest {
+	@Test
+	public void verifyEducationTest()
+	{
+		LoginPage loginpage=new LoginPage(getdriver());
+		loginpage.Login(ReadDataFromExcel.readData(1,0),ReadDataFromExcel.readData(1,1));
+		EducationPage level=new EducationPage(getdriver());
+		level.Education(ReadDataFromExcel.readData(1,9));
+		
+	}
+
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;oops.ExExceprionHandling.java&apos; to &apos;ExExceptionHandling.java&apos;&#x0D;&#x0A;- Original project: &apos;OrangeHRM&apos;&#x0D;&#x0A;- Original element: &apos;oops.ExExceprionHandling.java&apos;&#x0D;&#x0A;- Renamed element: &apos;oops.ExExceptionHandling.java&apos;" description="Rename compilation unit &apos;ExExceprionHandling.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;oops{ExExceprionHandling.java" name="ExExceptionHandling.java" references="false" stamp="1487127399283" version="1.0"/>
+</session>

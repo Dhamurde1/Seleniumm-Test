@@ -1,0 +1,1 @@
+INDEX VERSION 1.130+D:\Automation\Automation\3. Code\LTPT_1381\.metadata\.plugins\org.eclipse.jdt.core
